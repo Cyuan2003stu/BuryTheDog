@@ -1,6 +1,6 @@
 {
   "_resourceType": "background",
-  "id": "af7a4a1f-2c04-40f7-a5a8-a604f791ea2f",
+  "id": "ee82fee9-b307-44e6-80ad-e2f7dac54200",
   "name": "testbar",
   "symbol": "bg_testbar",
   "width": 20,
@@ -8,6 +8,5 @@
   "imageWidth": 160,
   "imageHeight": 144,
   "filename": "testbar.png",
-  "tileColors": "06168+",
-  "autoColor": false
+  "tileColors": ""
 }
