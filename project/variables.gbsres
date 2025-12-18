@@ -65,6 +65,16 @@
       "id": "12",
       "name": "PushedIceBlock",
       "symbol": ""
+    },
+    {
+      "id": "13",
+      "name": "movedirection",
+      "symbol": "var_movedirection"
+    },
+    {
+      "id": "14",
+      "name": "positionx",
+      "symbol": "var_positionx"
     }
   ]
 }
