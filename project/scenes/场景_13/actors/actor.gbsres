@@ -35,7 +35,7 @@
         "actorId": "$self$",
         "vectorX": "14",
         "vectorY": "L0",
-        "__collapse": true
+        "__collapse": false
       },
       "id": "5a76a169-18e8-407a-8f80-158215be3f45"
     },
@@ -54,7 +54,7 @@
           }
         },
         "__collapseElse": true,
-        "__collapse": true
+        "__collapse": false
       },
       "children": {
         "true": [
@@ -313,12 +313,37 @@
       "command": "EVENT_IF_INPUT",
       "args": {
         "input": [
+          "a",
+          "b"
+        ],
+        "__collapseElse": true,
+        "__collapse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_MOVE_CANCEL",
+            "args": {
+              "actorId": "4f49beaa-7441-469b-b0c9-e1c86f68a0f3",
+              "__collapse": false
+            },
+            "id": "faf354cc-9b02-4464-a528-ccf7fb9c88f3"
+          }
+        ],
+        "false": []
+      },
+      "id": "9649e4ae-6c94-4cf5-9aea-288fca49f235"
+    },
+    {
+      "command": "EVENT_IF_INPUT",
+      "args": {
+        "input": [
           "b",
           "a"
         ],
         "__collapseElse": true,
-        "__collapse": true,
-        "__comment": true
+        "__collapse": false,
+        "__comment": false
       },
       "children": {
         "true": [
@@ -326,21 +351,14 @@
             "command": "EVENT_IF",
             "args": {
               "condition": {
-                "type": "eq",
+                "type": "lte",
                 "valueA": {
                   "type": "variable",
                   "value": "14"
                 },
                 "valueB": {
-                  "type": "lte",
-                  "valueA": {
-                    "type": "number",
-                    "value": 1
-                  },
-                  "valueB": {
-                    "type": "number",
-                    "value": 4
-                  }
+                  "type": "number",
+                  "value": 10
                 }
               },
               "__collapseElse": true,
@@ -352,10 +370,10 @@
                   "command": "EVENT_TEXT",
                   "args": {
                     "text": [
-                      "1"
+                      "  hello"
                     ],
                     "__section": "text",
-                    "avatarId": "",
+                    "avatarId": "8c145587-00c8-4bfd-9a84-a8b70fd1c4d5",
                     "minHeight": 4,
                     "maxHeight": 7,
                     "textX": 1,
@@ -382,31 +400,6 @@
         "false": []
       },
       "id": "bbdecf43-13a9-45b1-ab0d-f51f863b29c6"
-    },
-    {
-      "command": "EVENT_IF_INPUT",
-      "args": {
-        "input": [
-          "a",
-          "b"
-        ],
-        "__collapseElse": true,
-        "__collapse": false
-      },
-      "children": {
-        "true": [
-          {
-            "command": "EVENT_ACTOR_MOVE_CANCEL",
-            "args": {
-              "actorId": "4f49beaa-7441-469b-b0c9-e1c86f68a0f3",
-              "__collapse": false
-            },
-            "id": "faf354cc-9b02-4464-a528-ccf7fb9c88f3"
-          }
-        ],
-        "false": []
-      },
-      "id": "9649e4ae-6c94-4cf5-9aea-288fca49f235"
     }
   ],
   "hit1Script": [],
