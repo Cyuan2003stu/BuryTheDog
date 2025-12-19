@@ -7,9 +7,9 @@
   "symbol": "scene_underground",
   "x": 831,
   "y": 74,
-  "width": 32,
-  "height": 32,
-  "backgroundId": "1fe2fdff-04dc-4dd7-8ac3-401fe0856cab",
+  "width": 20,
+  "height": 18,
+  "backgroundId": "19c847e5-b49d-4ea6-934a-54d2cf4e8f72",
   "tilesetId": "",
   "paletteIds": [
     "dmg"
@@ -71,5 +71,5 @@
   "playerHit1Script": [],
   "playerHit2Script": [],
   "playerHit3Script": [],
-  "collisions": ""
+  "collisions": "00168+"
 }
